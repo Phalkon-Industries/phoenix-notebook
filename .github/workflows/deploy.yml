@@ -17,6 +17,9 @@ concurrency:
 
 jobs:
   deploy-book:
+    defaults:
+      run:
+        shell: bash -l {0}
     runs-on: ubuntu-latest
     # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
     permissions:
@@ -31,7 +34,7 @@ jobs:
         with:
           environment-file: environment.yml
           cache-environment: false
-          
+
       # Build the book
       - name: Build the book
         run: |
