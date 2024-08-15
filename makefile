@@ -24,7 +24,7 @@ clean:
 	
 environment:
 	@echo "Creating mamba environment"
-	@mamba env create -f environment-lock.yml
+	@mamba env create -f environment.yml
 	@echo "Done"
 
 mamba-update:

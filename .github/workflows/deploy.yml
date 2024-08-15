@@ -29,13 +29,9 @@ jobs:
       - name: setup-mamba
         uses: mamba-org/setup-micromamba@v1
         with:
-          micromamba-version: '1.5.6-0' # any version from https://github.com/mamba-org/micromamba-releases
           environment-file: environment.yml
-          init-shell: >-
-            bash
-            powershell
-          cache-environment: true
-          post-cleanup: 'all'
+          cache-environment: false
+          
       # Build the book
       - name: Build the book
         run: |
