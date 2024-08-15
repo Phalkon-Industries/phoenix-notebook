@@ -31,6 +31,7 @@ jobs:
         with:
           micromamba-version: '1.5.6-0' # any version from https://github.com/mamba-org/micromamba-releases
           environment-file: environment-lock.yml
+          environment-name: phoenix-notebook
           init-shell: >-
             bash
             powershell
