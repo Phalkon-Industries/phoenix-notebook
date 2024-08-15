@@ -334,4 +334,3 @@ dependencies:
       - numpy==1.26.4
       - pyco2sys==1.8.3.2
       - seabird==0.12.0
-prefix: C:\Users\Jonathan\mambaforge\envs\phoenix-notebook
