@@ -1,0 +1,28 @@
+name: whoi-notebook
+dependencies:
+  - python==3.11
+  - jupyter
+  - jupyter-book
+  - matplotlib
+  - pandas
+  - numpy
+  - scikit-learn
+  - ghp-import
+  - openpyxl
+  - plotly
+  - bokeh
+  - xarray
+  - statsmodels
+  - seaborn
+  - prettytable
+  - paramiko
+  - lxml
+  - html5lib
+  - dash
+  - python-kaleido==0.1.*
+  - pyarrow
+  - pip
+  - pip:
+      - jupyterlab-myst
+      - PyCO2SYS
+      - seabird

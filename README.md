@@ -1,2 +1,2 @@
-# phoenix-notebook
-The open notebook for the phoenix project
+# whoi-notebook
+Repo for my lab notebook and associated things

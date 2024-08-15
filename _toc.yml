@@ -1,0 +1,46 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Guides and Reference
+    chapters:
+      - file: "notebook-indexes/guides"
+        sections:
+          - glob: "notebook-guides/*"
+  - caption: By Date
+    chapters:
+      - file: "notebook-indexes/2024"
+        sections:
+          - glob: "notebook-pages/2024*"
+      - file: "notebook-indexes/2023"
+        sections:
+          - glob: "notebook-pages/2023*"
+      - file: "notebook-indexes/2022"
+        sections:
+          - glob: "notebook-pages/2022*"
+      - file: "notebook-indexes/2021"
+        sections:
+          - glob: "notebook-pages/2021*"
+      - file: "notebook-indexes/2020"
+        sections:
+          - glob: "notebook-pages/2020*"
+  - caption: By Project
+    chapters:
+      - file: "notebook-indexes/eclipse-ph"
+        sections:
+          - glob: "notebook-pages/*[[]eclipse-ph[]]*"
+
+      - file: "notebook-indexes/dic-optode"
+        sections:
+          - glob: "notebook-pages/*[[]dic-optode[]]*"
+      - file: "notebook-indexes/noaa-chanos"
+        sections:
+          - glob: "notebook-pages/*[[]noaa-chanos[]]*"
+      - file: "notebook-indexes/chanos-ii"
+        sections:
+          - glob: "notebook-pages/*[[]chanos-ii[]]*"
+      - file: "notebook-indexes/misc"
+        sections:
+          - glob: "notebook-pages/*[[]misc[]]*"
