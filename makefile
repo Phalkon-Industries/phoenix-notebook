@@ -27,19 +27,6 @@ environment:
 	@mamba env create -f environment.yml
 	@echo "Done"
 
-publish: build
-# delete the _source folder in the _build directory using cmd
-	@echo "Deleting _source folder"
-	@rd / -q .\_build\html\_sources
-# makes a cmd command which copies the html directory and copies it to the other shared drive
-	@echo "Publishing book to OneDrive"
-	@xcopy /E /I /Y .\_build\html "C:\Users\Jonathan\Woods Hole Oceanographic Institution\M365 Wang Lab Team - MARINE CHEMISTRY & GEOCHEMISTRY - Jonathan Lab Notebook - Jonathan Lab Notebook\html"
-	@echo "Done with publishing"
-	@git add -A
-	@git commit
-	@git push origin main
-
-
 mamba-update:
 	$(ACTIVATE)
 	@echo "Updating mamba environment"
