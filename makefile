@@ -1,7 +1,7 @@
 # Using .ONESHELL mostly for readability, and also because that's how I got it to work with windows. See https://www.gnu.org/software/make/manual/html_node/One-Shell.html
 .ONESHELL:
 BUILD-FOLDER = .\_build
-ACTIVATE = @call conda activate whoi-notebook
+ACTIVATE = @call conda activate phoenix-notebook
 
 
 .PHONY: all clean build publish test make-environment
@@ -24,7 +24,7 @@ clean:
 	
 environment:
 	@echo "Creating mamba environment"
-	@mamba env create -f environment.yml
+	@mamba env create -f environment-lock.yml
 	@echo "Done"
 
 mamba-update:
